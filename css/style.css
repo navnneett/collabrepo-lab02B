@@ -28,6 +28,7 @@
     line-height: 1.4;
   }
   
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -92,7 +93,11 @@
   }
   
   /* 1.2 Core Stylying */
-  
+ 
+  * {
+    margin: 0;
+    padding: 0;
+  }
   /* 1.3 Typography */
   
   h1,
@@ -120,7 +125,7 @@
   header {
     outline: 1px solid #ccc;
     min-height: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
   }  
   
   .content-layout {
@@ -130,8 +135,9 @@
     margin: 0 auto;
     max-width: 70rem;
     position: relative;
-    background-color: rgb(242, 230, 177);
+    background-color: white;
   }
+
   
   .page {
     display: flex;
@@ -262,11 +268,13 @@
     background-color: rgb(230, 230, 230);
   }
   
-  .section section--flex-container-services, 
-  .section section--flex-container-latest-projects,
-  .section section--flex-container-misc-stuff {
-    margin: 0px;
-    padding: 0;
+  .section--flex-container-services, 
+  .section--flex-container-latest-projects,
+  .section--flex-container-misc-stuff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   
   .flex-row-images-project,
@@ -456,16 +464,33 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
+ /* Small only */
+
+  @media screen and (max-width: 39.9375em) {}
+
+
   
-  @media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    
   }
+}
+
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
   
   /* ==========================================================================
      Print styles.
@@ -473,16 +498,7 @@
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
   
-  @media print {
-    *,
-    *::before,
-    *::after {
-      background: #fff !important;
-      color: #000 !important;
-      /* Black prints faster */
-      box-shadow: none !important;
-      text-shadow: none !important;
-    }
+  
   
     a,
     a:visited {
@@ -532,6 +548,11 @@
     h3 {
       page-break-after: avoid;
     }
-  }
   
+  .sample {
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
   
