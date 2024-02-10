@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Metrolics | Home</title>
+  <title>Metrolics</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="This is Metrolics home page template">
+  <meta name="description" content="HTML Structure">
 
-  <meta property="og:title" content="Metrolics">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="Metrolics Template">
+  <meta property="og:type" content="HTML">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
@@ -19,116 +19,192 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+
 </head>
 
-<body class="page">
-  
+<body>
+  <div class="page">
+
   <header class="page__header page __header--home">
-    <div class="inner-container">
-      <div class="content-container">
-        <nav class="nav-bar">
-          <img src="URL" alt="logo" class="company-logo">
-          <h4 class="nav-contents">Home Pages Blog Portfolio Home</h4>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- end of page__header -->
+    <nav class="nav-bar">
+        <img src="URL" alt="logo" class="company-logo">
+      <ul class="nav-contents">
+        <li class="home">Home</li>
+        <li class="pages">Pages</li> 
+        <li class="blog">Blog</li> 
+        <li class="portfolio">Portfolio</li>
+        <li class="home-blue">Home</li>
+      </ul>
+    </nav>
+  </header><!-- end of page__header -->
 
-  <div class="section section--flex-container-intro">
-    <div class="inner-container">
-      <div class="content-container">
-        <h2 class="heading">Hey guys! This is the Metrolics theme.
-          It sports a responsive layout with a mobile layout.</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="section section--flex-container-services">
-    <div class="inner-container">
-      <div class="content-container">
-        <h2 class="heading">Things That We Do.</h2>
-        <h4 class="sub-heading">Ask us what we can do for you</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="section section--flex-container-latest-work">
-    <div class="inner-container">
-      <div class="content-container">
-        <h2 class="heading">Whats Up Lately?</h2>
-        <h4 class="sub-heading">Read up on our latest work</h4>
-        <div class="flex-row-images-latest-work">
-          <img src="URL" alt="images" class="latest-work">
-          <img src="URL" alt="images" class="latest-work">
-          <img src="URL" alt="images" class="latest-work">
+    <div class="slider">
+      <div class="silder-card">
+        <div class="slider--card-img">
+          <img src="./images/main-image.png" alt="minion" class="image">
+          <div class="slider--card-list">
+            <ul>
+              <li class="list">Metro Style</li>
+              <li class="list">Retaina Ready</li>
+              <li class="list">Responsive Design</li>
+            </ul>
+          </div>
+          <div class="slider-controls">
+            <button>
+              <img src="./images/left.png" alt="left arrow" class="left-arrow">
+            </button>
+            <button>
+              <img src="./images/right.png" alt="right arrow" class="right-arrow">
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div><!-- end of the slider area -->
 
-  <div class="section section--flex-container-latest-projects">
-    <div class="inner-container">
-      <div class="content-container">
-        <h2 class="heading">Our Latest Projects</h2>
-        <h4 class="sub-heading">Client happy? We are happy.</h4>
-        <div class="flex-row-images-project">
-          <img src="URL" alt="images" class="project">  
-          <img src="URL" alt="images" class="project">
-          <img src="URL" alt="images" class="project">
-          <img src="URL" alt="images" class="project">
-          <img src="URL" alt="images" class="project">
-          <img src="URL" alt="images" class="project">
+    <div class="content-layout">
+      <h2 class="heading">Hey guys! This is the Metrolics theme.</h2>
+      <h2 class="heading">It sports a responsive layout with a mobile layout.</h2>
+
+      <div class="section section--flex-container-services">
+        <h3 class="content">Things That We Do.</h3>
+        <h6 class="sub-heading">Ask us what we can do for you</h6>
+          <div class="inner-container">
+            <div class="s-col">
+              <img src="URL" alt="images" class="icon">
+              <h4 class="s-heading">Web Solutions</h4>
+              <p class="paragraph">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design need. Wether you need to create a brand from scratch, including marketing materials.</p>
+            </div>
+            <div class="s-col">
+              <img src="URL" alt="images" class="icon">
+              <h4 class="s-heading">Photography</h4>
+              <p class="paragraph">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design need. Wether you need to create a brand from scratch, including marketing materials.</p>
+            </div>
+            <div class="s-col">
+              <img src="URL" alt="images" class="icon">
+              <h4 class="s-heading">Web Development</h4>
+              <p class="paragraph">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design need. Wether you need to create a brand from scratch, including marketing materials.</p>
+            </div>
+            <div class="s-col">
+              <img src="URL" alt="images" class="icon">
+              <h4 class="s-heading">Web Design</h4>
+              <p class="paragraph">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design need. Wether you need to create a brand from scratch, including marketing materials.</p>
+            </div>
+          </div>
+      </div><!-- end of section 1 -->
+
+      <div class="section section--flex-container-latest-work">
+        <h3 class="content">Whats Up Lately?</h3>
+        <h4 class="sub-header">Read up on our latest work</h4>
+          <div class="content-container">
+            <img src="URL" alt="images" class="sample">
+            <img src="URL" alt="images" class="sample">
+            <img src="URL" alt="images" class="sample">
+          </div>
+      </div><!-- end of section 2 -->
+
+      <div class="section section--flex-container-latest-projects">
+        <h3 class="content">Our Latest Projects</h3>
+        <h4 class="sub-header">Client happy? We are happy.</h4>
+          <div class="flex-row-images-project">
+            <img src="URL" alt="images" class="project">
+            <img src="URL" alt="images" class="project">
+            <img src="URL" alt="images" class="project">
+          </div>
+            <div class="flex-second-row-images-project">
+            <img src="URL" alt="images" class="project">
+            <img src="URL" alt="images" class="project">
+            <img src="URL" alt="images" class="project">
+          </div>
+      </div><!-- end of section 3 -->
+
+      <div class="section section--flex-container-misc-stuff">
+        <h3 class="content">Thingsofabove</h3>
+        <h4 class="sub-header">Misc stuff we could not put anyplace else</h4>
+          <div class="inner-container">
+
+            <div class="menu-column">
+              <div class="menu">
+                <label for="touch"><span class="menu-content">Menu</span></label>               
+                <input type="checkbox" id="touch">
+                <div class="slide">
+                  <img src="URL" alt="Menu Icon" class="menu-icon">
+                  <p class="slide-paragraph">Paragraph</p>
+                </div>
+              </div>
+              <div class="menu">
+                <label for="touch"><span class="menu-content">Menu</span></label>               
+                <input type="checkbox" id="touch">
+                <div class="slide">
+                  <img src="URL" alt="Menu Icon" class="menu-icon">
+                  <p class="slide-paragraph">Paragraph</p>
+                </div>
+              </div>
+              <div class="menu">
+                <label for="touch"><span class="menu-content">Menu</span></label>               
+                <input type="checkbox" id="touch">
+                <div class="slide">
+                  <img src="URL" alt="Menu Icon" class="menu-icon">
+                  <p class="slide-paragraph">Paragraph</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="tab">
+            <button class="tab-links">Tab 1</button>
+            <button class="tab-links">Tab 2</button>
+            <button class="tab-links">Tab 3</button>
+            <p class="tab-content">Paragraph</p>
+          </div>
+          </div>
+      </div><!-- end of section 4 -->
+
+      <div class="section section--flex-container-brands">
+        <div class="inner-container">
+          <img src="URL" alt="images" class="company">
+          <img src="URL" alt="images" class="company">
+          <img src="URL" alt="images" class="company">
+          <img src="URL" alt="images" class="company">
+          <img src="URL" alt="images" class="company">
         </div>
+      </div><!-- end of section 5 -->
+    </div><!-- end of main contents -->
+  </div><!-- end of page_layout -->
+
+  <footer class="page-footer"> <!--"page-footer"-->
+    <div class="content-container">
+      <img src="URL" alt="profile" class="profile">
+      <h4>Peewee Herman</h4>
+      <p class="info-content">Peewee has over 10 years experience in the industry. He is our Creative Director, digital deigner, web designer and front-end developer. He is also pretty good with a sketch-book. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
+    </div>
+
+    <div class="footer-item">
+      <div class="flex-item-container-col-footer">
+        <h3 class="footer-heading">About Us</h3>
+        <p class="footer-content">Minions lpsum potatoooo potatoooo uuuhhh. Chasy poulet tlkka massala jiji willll hahaha po kass tulallloo potatoooo. Bee do bee do bee do chasy tl aamoo! Po kass daa bee do bee do bee do po kass willll butt chasy. Pepete uuuhhh hahaha gelatooo belloo! Bananaaa aaaaaah butt.</p>
+        <img src="URL" alt="images" class="icons">
+      </div>
+      <div class="flex-item-container-col-footer">
+        <h3 class="footer-heading">Flicker Photos</h3>
+        <img src="URL" alt="images" class="minions">
+          <img src="URL" alt="images" class="minions">
+          <img src="URL" alt="images" class="minions">
+          <img src="URL" alt="images" class="minions">
+          <img src="URL" alt="images" class="minions">
+      </div>
+      <div class="flex-item-container-col-footer">
+        <h3 class="footer-heading">Recent Tweets</h3>
+        <img src="URL" alt="images" class="twitter">
+        <p class="footer-content">@Minions - lpsum potatoooo potatoooo uuuhhh. Chasy poulet tlkka masala jiji willll hahaha po kass</p>
+        <img src="URL" alt="images" class="twitter">
+        <p class="footer-content">@Minions - lpsum banana potatoooo uuuhhh. Chasy poulet tlkka masala jiji willll hahaha.</p>
+      </div>
+      <div class="flex-item-container-col-footer">
+        <h3 class="footer-heading">Newsletter</h3>
+        <p class="footer-content">Minions lpsum potatoooo potatoooo uuuhhh. Chasy poulet tlkka masala jiji willll hahaha po kass tulallloo potatoooo. Bee do bee do bee do chasy tl aamoo! Po kass daa b ee do bee do bee do po kass willll butt chasy. Pepete uuuhhh.</p>
+        <img src="URL" alt="images" class="email">
       </div>
     </div>
-  </div>
-
-  <div class="section section--flex-container-misc-stuff">
-    <div class="inner-container">
-      <div class="content-container">
-        <h2 class="heading">Thingsofabove</h2>
-        <h4 class="sub-heading">Misc stuff we could not put anyplace else</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="section section--flex-container-brands">
-    <div class="inner-container">
-      <div class="content-container">
-        <img src="URL" alt="images" class="image-brand">
-        <img src="URL" alt="images" class="image-brand">
-        <img src="URL" alt="images" class="image-brand">
-        <img src="URL" alt="images" class="image-brand">
-        <img src="URL" alt="images" class="image-brand">
-      </div>
-    </div>
-  </div>
-
-  <footer class="page-footer">
-  <div class="section section--flex-container-footer">
-    <div class="inner-container">
-      <div class="content-container">
-        <h6>Peewee Herman</h6>
-      </div>
-
-      <div class="content-container">
-        <div class="flex-item-container-col-footer">
-          Item 1
-        </div>
-        <div class="flex-item-container-col-footer">
-          Item 2
-        </div>
-        <div class="flex-item-container-col-footer">
-          Item 3
-        </div>
-        <div class="flex-item-container-col-footer">
-          Item 4
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer><!-- end of page_footer -->
   <script src="js/app.js"></script>
 
 </body>
