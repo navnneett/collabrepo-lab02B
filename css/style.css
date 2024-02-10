@@ -466,7 +466,13 @@
   
  /* Small only */
 
-  @media screen and (max-width: 39.9375em) {}
+  @media screen and (max-width: 39.9375em) {
+    .content-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+      
+    }
+  }
 
 
   
