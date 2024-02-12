@@ -52,9 +52,9 @@
   
   hr {
     display: block;
-    height: 1px;
+    height: 0.063rem;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 0.063rem solid #ccc;
     margin: 1em 0;
     padding: 0;
   }
@@ -125,7 +125,6 @@
   header {
     min-height: 1rem;
     padding: 1rem;
-    outline: 1px solid #ccc;
   }  
   
   .content-layout {
@@ -136,6 +135,7 @@
     max-width: 70rem;
     position: relative;
     background-color: white;
+    padding-top: 3rem;
   }
 
   
@@ -145,46 +145,40 @@
     text-align: center;
     justify-content: space-around; 
   }
+
+  .metrolics {
+    text-decoration: none;
+    color: rgb(65, 184, 248)
+  }
+
+  .company-logo {
+    padding-right: 3.125rem;
+    padding-top: 4.5rem;
+    width: 10%;
+    height: 10%;
+  }
+
+  .company {
+    padding: 0;
+    margin:0;
+  }
+  
   
   .content-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 0.75rem;
+    justify-content: left;
   }
      
      /* 2.1 Core layout */
-  
-  .nav-contents {
-    padding-right: 50px;
-  }
-  
-  .home {
-    content: block;
-    background-color: rgb(38, 201, 144);
-  }
-
-  .pages {
-    background-color: rgb(255, 200, 0);
-  }
-
-  .blog {
-    background-color: rgb(250, 119, 119);
-  }
-
-  .portfolio {
-    background-color: rgb(32, 173, 220);
-  }
-
-  .home-blue {
-    background-color: rgb(17, 98, 164);
-  }
 
   .home:before,.pages:before,.blog:before,.portfolio:before,.home-blue:before {
-    display: block; 
+    width: 4.5rem;
+    height: 3.5rem;
   }
 
   .paragraph,.info-content,.footer-content {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .list {
@@ -236,18 +230,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   
   .nav-contents {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    content: block;
-    list-style-type: none;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    width: 8rem;
+    padding: 0;
+    margin: 0;
   }
      
   
@@ -268,27 +260,34 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 70rem;
+    position: relative;
     justify-content: space-around;
   }
   
   .flex-row-images-project,
-  .flex-second-row-images-project {
+  .flex-second-row-images-project,
+  .inner-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 70rem;
+    position: relative;
     justify-content: space-around;
   }
    
   .menu {
-    width : 500px; 
+    width : 31.25rem; 
     background: rgb(70, 160, 224);
-    margin : 10px; 
+    margin : 0.625rem; 
   }
   
   .menu-content {
     display: block;
     text-align: start;
-    padding : 10px; 
+    padding : 0.625rem; 
     cursor : pointer;
     color : white;
   }
@@ -297,22 +296,22 @@
     float: right;
     right: 10%;
     content: "+";
-    padding: 0 10px;
+    padding: 0 0.625rem;
     background-color:rgb(104, 183, 239); 
   }
   
   #touch {
     position: absolute; 
     opacity: 0; 
-    height: 0px;
+    height: 0;
   } 
   
-  #touch:checked + .slide {display: flex; justify-content: space-around; flex-direction: row; height: 200px;} 
+  #touch:checked + .slide {display: flex; justify-content: space-around; flex-direction: row; height: 12.5rem;} 
   
   .slide {
     clear:both;
     width:100%;
-    height:0px;
+    height:0;
     overflow: hidden;
     text-align: center;
     background-color: rgb(245, 244, 244);
@@ -326,17 +325,17 @@
   }
   
   .tab {
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 0.063rem solid #ccc;
     background-color: #f1f1f1;
   }
   
   .tab button {
     float: left;
     border: none;
-    outline: 2px;
-    padding: 15px;
+    outline: 0.125rem;
+    padding: 0.938rem;
     transition: 0.3s;
   }
   
@@ -347,7 +346,7 @@
     justify-content: space-around;
     background-color: black;
     color:white;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
   }
   
   .footer-item {
@@ -358,10 +357,6 @@
     justify-content: space-between;
   }
 
-  .flex-item-container-col-footer {
-    flex: 1;
-    padding: 0 15px; 
-}
 
   .content-container {
     display: flex;
@@ -372,7 +367,7 @@
   }
 
   .s-col {
-    width: 200px;
+    width: 12.5rem;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -404,13 +399,13 @@
   .visually-hidden {
     border: 0;
     clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
+    height: 0.063rem;
+    margin: -0.063rem;
     overflow: hidden;
     padding: 0;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
+    width: 0.063rem;
     /* 1 */
   }
   
@@ -631,6 +626,9 @@
   .section--flex-container-latest-projects {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 70rem;
+    position: relative;
     align-items: center; 
     text-align: center; 
   }
@@ -639,12 +637,18 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
+    margin: 0 auto;
+    max-width: 70rem;
+    position: relative;
     text-align: center; 
   }
 
   .section--flex-container-services {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 70rem;
+    position: relative;
     align-items: center; 
     text-align: center; 
   }
@@ -657,15 +661,8 @@
   }
 
   .heading {
-    font-weight: bold;
     font-size: 2rem;
-    padding: 0.3rem;
     align-items: center;
-  }
-
-  .content-layout {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .s-heading {
