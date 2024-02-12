@@ -123,8 +123,8 @@
   section,
   footer,
   header {
-    min-height: 1rem;
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
   }  
   
   .content-layout {
@@ -136,6 +136,7 @@
     position: relative;
     background-color: white;
     padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   
@@ -153,7 +154,7 @@
 
   .company-logo {
     padding-right: 3.125rem;
-    padding-top: 4.5rem;
+    padding-top: 3.125rem;
     width: 10%;
     height: 10%;
   }
@@ -161,6 +162,10 @@
   .company {
     padding: 0;
     margin:0;
+  }
+
+  .content {
+    padding-top: 3rem;
   }
   
   
@@ -172,9 +177,9 @@
      
      /* 2.1 Core layout */
 
-  .home:before,.pages:before,.blog:before,.portfolio:before,.home-blue:before {
-    width: 4.5rem;
-    height: 3.5rem;
+  .home,.pages,.blog,.portfolio,.home-blue {
+    width: 6.5rem;
+    height: 5.5rem;
   }
 
   .paragraph,.info-content,.footer-content {
@@ -187,11 +192,24 @@
     background-color: rgba(255, 255, 255, 0.5);
   }
 
+  .page__header page __header--home {
+    padding: 0;
+    margin:0;
+  }
+
   .slider--card-list {
     position: absolute;
     text-align: left;
-    top: 7rem;
-    left: 20rem;
+    top: 8.5rem;
+    left: 25rem;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider-card,.slider--card-image {
+    margin: 0;
+    padding: 0;
   }
 
   .list:nth-child(1) {
@@ -276,6 +294,7 @@
     max-width: 70rem;
     position: relative;
     justify-content: space-around;
+    padding: 2rem;
   }
    
   .menu {
@@ -475,6 +494,60 @@
     .page-footer {
       display: none;
   }
+
+  .slider {
+    padding:0;
+    margin: 0;
+    position: relative;
+    background-color: rgb(230, 230, 230);
+  }
+
+  .slider--card-list {
+    position: absolute;
+    text-align: left;
+    top: 2.5rem;
+    left: 5rem;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider-card,.slider--card-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .list:nth-child(1) {
+    border-left: solid 0.2rem rgb(17, 98, 164);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 5rem;
+  }
+
+  .list:nth-child(2) {
+    border-left: solid 0.2rem rgb(250, 119, 119);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 6rem;
+  }
+
+  .list:nth-child(3) {
+    border-left: solid 0.2rem rgb(255, 200, 0);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 8rem;
+  }
+
+  .left-arrow,.right-arrow {
+    position: absolute;
+    align-items: center;
+    top: 3rem;
+  }
+
+  .left-arrow {
+    left: 2rem;
+  }
+
+  .right-arrow {
+    left: 10rem;
+  }
   }
 
 
@@ -499,6 +572,60 @@
   .inner-container-flicker {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .slider {
+    padding:0;
+    margin: 0;
+    position: relative;
+    background-color: rgb(230, 230, 230);
+  }
+
+  .slider--card-list {
+    position: absolute;
+    text-align: left;
+    top: 2.5rem;
+    left: 5rem;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider-card,.slider--card-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  .list:nth-child(1) {
+    border-left: solid 0.2rem rgb(17, 98, 164);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 5rem;
+  }
+
+  .list:nth-child(2) {
+    border-left: solid 0.2rem rgb(250, 119, 119);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 6rem;
+  }
+
+  .list:nth-child(3) {
+    border-left: solid 0.2rem rgb(255, 200, 0);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 8rem;
+  }
+
+  .left-arrow,.right-arrow {
+    position: absolute;
+    align-items: center;
+    top: 3rem;
+  }
+
+  .left-arrow {
+    left: 2rem;
+  }
+
+  .right-arrow {
+    left: 10rem;
   }
 }
 
@@ -583,7 +710,7 @@
   
   .sample {
     width: 20rem;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     align-items: center;
   }
@@ -600,7 +727,7 @@
 
   .project {
     width: 20rem;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
   }
 
