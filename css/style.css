@@ -125,6 +125,7 @@
   header {
     min-height: 1rem;
     padding: 1rem;
+    
   }  
   
   .content-layout {
@@ -475,6 +476,12 @@
     .page-footer {
       display: none;
   }
+  .inner-container-company {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    padding: 0;
+    margin: 0;
+  }
   }
 
 
@@ -500,6 +507,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
   }
+  .inner-container-company {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0;
+    margin: 0;
+  }
 }
 
 
@@ -522,6 +535,12 @@
   .inner-container-flicker {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
+  }
+  .inner-container-company {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -660,6 +679,26 @@
     text-align: center; 
   }
 
+  .section--flex-container-brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 70rem;
+    position: relative;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .col-3 img{
+    padding: 0;
+  }
+
   .heading {
     font-size: 2rem;
     align-items: center;
@@ -709,7 +748,7 @@
     border-left: 0.9rem solid transparent; 
     border-right: 0.9rem solid transparent; 
     border-top: 0.9rem solid rgb(255, 200, 0); 
-    bottom: 2.4rem;
+    bottom: 2.2rem;
 }
 
 .arrow-down-about {
@@ -726,7 +765,7 @@
   border-left: 0.9rem solid transparent; 
   border-right: 0.9rem solid transparent; 
   border-top: 0.9rem solid rgb(38, 201, 144); 
-  bottom: 2.4rem;
+  bottom: 2.2rem;
 }
 
 .arrow-down-tweets {
@@ -743,7 +782,7 @@
   border-left: 0.9rem solid transparent; 
   border-right: 0.9rem solid transparent; 
   border-top: 0.9rem solid rgb(250, 119, 119); 
-  bottom: 2.4rem;
+  bottom: 2.2rem;
 }
 
 .arrow-down-news {
@@ -760,10 +799,43 @@
   border-left: 0.9rem solid transparent; 
   border-right: 0.9rem solid transparent; 
   border-top: 0.9rem solid rgb(70, 160, 224); 
-  bottom: 2.4rem;
+  bottom: 2.2rem;
 }
 
 .footer-content {
   font-size: 0.6rem;
   line-height: 2em;
 }
+
+.bottom-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-left: 48rem;
+}
+
+.color-block {
+  height: 0.1rem;
+  width: 3rem;
+}
+
+.green {
+  background-color: rgb(38, 201, 144);
+}
+
+.yellow {
+  background-color: rgb(255, 200, 0);
+}
+
+.red {
+  background-color: rgb(250, 119, 119);
+}
+
+.light {
+  background-color:rgb(70, 160, 224);
+}
+
+.blue {
+  background-color: blue;
+}
+
