@@ -123,8 +123,8 @@
   section,
   footer,
   header {
-    padding: 0;
-    margin: 0
+    min-height: 1rem;
+    padding: 1rem;
     
   }  
   
@@ -137,7 +137,6 @@
     position: relative;
     background-color: white;
     padding-top: 3rem;
-    padding-bottom: 2rem;
   }
 
   
@@ -155,20 +154,16 @@
 
   .company-logo {
     padding-right: 3.125rem;
-    padding-top: 3.125rem;
+    padding-top: 4.5rem;
     width: 10%;
     height: 10%;
   }
 
   .company {
-    padding: 2rem;
-    margin:1rem;
+    padding: 0;
+    margin:0;
   }
   
-  
-  .content {
-    padding-top: 3rem;
-  }
   
   .content-container {
     display: flex;
@@ -178,9 +173,9 @@
      
      /* 2.1 Core layout */
 
-    .home,.pages,.blog,.portfolio,.home-blue {
-    width: 6.5rem;
-    height: 5.5rem;
+  .home:before,.pages:before,.blog:before,.portfolio:before,.home-blue:before {
+    width: 4.5rem;
+    height: 3.5rem;
   }
 
   .paragraph,.info-content,.footer-content {
@@ -193,28 +188,30 @@
     background-color: rgba(255, 255, 255, 0.5);
   }
 
-  .page__header page __header--home {
-    padding: 0;
-    margin:0;
-  }
-
   .slider--card-list {
     position: absolute;
     text-align: left;
     top: 7rem;
     left: 20rem;
-    top: 8.5rem;
-    left: 25rem;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
   }
 
-  .slider-card,.slider--card-image {
-    margin: 0;
-    padding: 0;
+  .list:nth-child(1) {
+    border-left: solid 0.2rem rgb(17, 98, 164);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 5rem;
   }
 
+  .list:nth-child(2) {
+    border-left: solid 0.2rem rgb(250, 119, 119);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 6rem;
+  }
+
+  .list:nth-child(3) {
+    border-left: solid 0.2rem rgb(255, 200, 0);
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    width: 8rem;
+  }
 
   .left-arrow,.right-arrow {
     position: absolute;
@@ -373,7 +370,6 @@
   .s-col {
     width: 12.5rem;
     justify-content: center;
-    padding: 0 2rem;
     text-align: center;
     flex-direction: column;
   }
@@ -606,7 +602,7 @@
   
   .sample {
     width: 20rem;
-    padding: 1rem;
+    padding: 0;
     margin: 0;
     align-items: center;
   }
@@ -623,7 +619,7 @@
 
   .project {
     width: 20rem;
-    padding: 1rem;
+    padding: 0;
     margin: 0;
   }
 
@@ -686,7 +682,6 @@
   .section--flex-container-brands {
     display: flex;
     flex-direction: column;
-    padding: 3rem;
     align-items: center; 
     text-align: center;
   }
