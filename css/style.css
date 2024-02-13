@@ -812,6 +812,7 @@
   flex-wrap: wrap;
   align-items: flex-end;
   margin-left: 48rem;
+  width: 25rem;
 }
 
 .color-block {
@@ -838,4 +839,5 @@
 .blue {
   background-color: blue;
 }
+
 
